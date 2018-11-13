@@ -1,0 +1,28 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($color: $oc-gray-9, $alpha: 0.7);
+
+  &.active {
+    display: block;
+  }
+
+  .modal-container {
+    margin: 32px auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 720px;
+
+    textarea {
+      width: 100%;
+      min-height: 20em;
+      font-family: 'Courier New', Courier, monospace;
+      outline: 0;
+      border: 0;
+    }
+  }
+}

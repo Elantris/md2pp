@@ -1,0 +1,40 @@
+@import '~open-color/open-color';
+@import './markdown-body.scss';
+@import './toolbar.scss';
+@import './modal.scss';
+
+body {
+  background: $oc-gray-1;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0.5in;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 720px;
+  background: white;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page-break {
+  page-break-before: always;
+}
