@@ -1,18 +1,30 @@
 {
-  "name": "printed-assignment",
+  "name": "md2pp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "highlight.js": "^9.13.1",
+    "markdown-it": "^8.4.2",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-meta": "^0.0.1",
+    "node-sass": "^4.10.0",
+    "open-color": "^1.6.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://elantris.github.io/md2pp/",
   "eslintConfig": {
     "extends": "react-app"
   },
